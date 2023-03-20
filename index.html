@@ -12,50 +12,73 @@
   </head>
   <body class="text-base bg-rose-900">
     <!-- navbar -->
-    <nav class="bg-gray-100">
-      <div class="max-w-6xl mx-auto border px-4">
+    <nav class="bg-amber-400">
+      <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
           <div class="flex space-x-4">
             <!-- logo -->
             <div>
-              <a href="#" class="flex items-center py-5 px-2 text-gray-700">
-                <img class="h-6 w-6 mr-2" src="./public/images/cattan.png" />
-                <span class="font-bold">Catford Tandoori</span>
+              <a href="#" class="flex items-center py-5 px-2 text-blue-500">
+                <img
+                  class="h-12 w-12 mr-2 md:h-12 md:w-12"
+                  src="./public/images/cattan.png"
+                />
+                <span class="font-bold md:text-xl text-2xl"
+                  >Catford Tandoori</span
+                >
               </a>
             </div>
-
-            <!-- primary nav  -->
-            <div class="hidden md:flex items-center space-x-4">
-              <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900"
-                >Menu</a
-              >
-              <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900"
-                >About us</a
-              >
-              <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900"
-                >Upcoming events</a
-              >
-            </div>
+          </div>
+          <!-- primary nav  -->
+          <div class="hidden md:flex items-center space-x-4">
+            <a
+              href="menu.html"
+              class="py-5 px-3 text-rose-700 font-bold hover:text-rose-900"
+              >Menu</a
+            >
+            <a
+              href=""
+              class="py-5 px-3 text-rose-700 font-bold hover:text-rose-900"
+              >About us</a
+            >
+            <a
+              href=""
+              class="py-5 px-3 text-rose-700 font-bold hover:text-rose-900"
+              >Upcoming events</a
+            >
           </div>
 
           <!-- secondary nav  -->
           <div class="hidden md:flex items-center space-x-1">
-            <a href="" class="py-5 px-3">Contact us</a>
-            <a href="" class="py-5 px-3"
+            <a
+              href="tel:01322 529907"
+              class="py-5 px-3 text-rose-700 font-semibold"
+              >Contact us</a
+            >
+            <a
+              href="https://www.facebook.com/als.crayfordtandoori/?modal=admin_todo_tour"
+              class="py-5 px-3"
               ><i class="fa fa-facebook-square h-6 w-6"></i>
             </a>
+          </div>
+          <div class="items-center py-5 md:hidden">
+            <a
+              href="tel:01322 529907"
+              class="text-2xl py-5 pl-5 text-rose-700 font-semibold"
+              >01322 529907</a
+            >
           </div>
 
           <!-- mobile button  -->
           <div class="md:hidden flex items-center">
-            <button class="mobile-menu-button">
+            <button class="mobile-menu-button" alt="menu button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                class="w-6 h-6 text-rose-700 font-bold"
               >
                 <path
                   stroke-linecap="round"
@@ -70,20 +93,118 @@
 
       <!-- mobile menu  -->
       <div class="mobile-menu hidden md:hidden">
-        <a href="" class="block py-4 px-4 text-sm hover:bg-gray-200">Menu</a>
-        <a href="" class="block py-4 px-4 text-sm hover:bg-gray-200"
+        <a
+          href="menu.html"
+          class="block py-4 px-4 text-m text-rose-700 font-bold hover:bg-gray-200"
+          >Menu</a
+        >
+        <a
+          href=""
+          class="block py-4 px-4 text-m text-rose-700 font-bold hover:bg-gray-200"
           >Upcoming events</a
         >
-        <a href="" class="block py-4 px-4 text-sm hover:bg-gray-200"
+        <a
+          href=""
+          class="block py-4 px-4 text-m text-rose-700 font-bold hover:bg-gray-200"
           >About us</a
         >
       </div>
     </nav>
 
     <!-- content -->
-    <div class="py-32 text-center">
-      <h2 class="font-extrabold text-4xl">tan</h2>
+    <div class="py-16 text-center max-w-6xl mx-auto px-6">
+      <div>
+        <h2 class="font-extrabold text-xl">
+          Fine Bangladeshi cuisine and a separate Vegan Menu
+        </h2>
+        <h3 class="font-bold text-l py-5">
+          Please phone and book a table to avoid disappointment.
+          <br />
+          We are able to supply collected takeaways (until 10pm) 10% off of menu
+          price.
+        </h3>
+        <h3 class="font-bold text-l pb-8">
+          Our hours are 5.30-10.30 Fri/Sat11pm
+        </h3>
+        <img class="md:hidden" src="./public/images/indi-res-small.jpg" />
+        <img class="hidden md:flex" src="./public/images/indi-res.jpg" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-5">
+        <!-- menu  -->
+        <div
+          class="group relative items-center justify-center overflow-hidden cursor-pointer"
+        >
+          <a href="menu.html">
+            <img class="object-cover" src="./public/images/tan-menu.jpg" />
+          </a>
+          <div class="absolute top-0 left-0 px-6 py-4 bg-black opacity-[0.8]">
+            <h1 class="tracking-tight text-m md:text-xl font-bold text-white">
+              Menu
+            </h1>
+          </div>
+        </div>
+        <!-- specials  -->
+        <div
+          class="group relative items-center justify-center overflow-hidden cursor-pointer"
+        >
+          <a href="specials.html">
+            <img
+              class="object-cover ease-in-out"
+              src="./public/images/tan-special.png"
+            />
+          </a>
+          <div class="absolute top-0 left-0 px-6 py-4 bg-black opacity-[0.8]">
+            <h1 class="tracking-tight text-m md:text-xl font-bold text-white">
+              Specials
+            </h1>
+          </div>
+        </div>
+        <!-- map  -->
+        <div
+          class="group relative items-center justify-center overflow-hidden cursor-pointer"
+        >
+          <a href="https://goo.gl/maps/EaBJkpgXZ3nxNd1Q7" target="_blank"
+            ><div class="h-[250px] mb-5 relative overflow-hidden hover:shadow">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.3196911350315!2d0.17857140000000002!3d51.4522866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ae228681f6cd%3A0xa64d28496a5e5289!2sCrayford%20Tandoori!5e0!3m2!1sen!2suk!4v1679177794746!5m2!1sen!2suk"
+                width="384"
+                height="288"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div
+                class="absolute top-0 left-0 px-6 py-4 bg-black opacity-[0.8]"
+              >
+                <h1
+                  class="tracking-tight text-m md:text-xl font-bold text-white"
+                >
+                  Map
+                </h1>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
     </div>
+    <!-- end of main content  -->
+
+    <!-- footer  -->
+    <footer class="m-4 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-white sm:text-center dark:text-gray-400"
+          >© 2023
+          <a href="https://flowbite.com/" class="hover:underline"
+            >Crayford Tandoori</a
+          >. All Rights Reserved.
+        </span>
+      </div>
+    </footer>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
